@@ -1,0 +1,499 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Woo Product Multi Layout\n"
+"POT-Creation-Date: 2017-02-05 23:00+0600\n"
+"PO-Revision-Date: 2017-02-05 23:01+0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: woo-product-multi-layout.php\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#. Plugin Name of the plugin/theme
+#: class/class-addons.php:47
+msgid "Woo Product Multi Layout"
+msgstr ""
+
+#: class/class-addons.php:57
+msgid "Select Layout"
+msgstr ""
+
+#: class/class-admin.php:74 class/class-admin.php:75 class/class-admin.php:85
+msgid "Woo Multi Layout"
+msgstr ""
+
+#: class/class-admin.php:76 class/class-admin.php:77
+msgid "Add New Layout"
+msgstr ""
+
+#: class/class-admin.php:78
+msgid "Edit Layout"
+msgstr ""
+
+#: class/class-admin.php:79
+msgid "New Layout"
+msgstr ""
+
+#: class/class-admin.php:80
+msgid "View Layout"
+msgstr ""
+
+#: class/class-admin.php:81
+msgid "Search Layout"
+msgstr ""
+
+#: class/class-admin.php:82
+msgid "No Items found"
+msgstr ""
+
+#: class/class-admin.php:83
+msgid "No Items found in Trash"
+msgstr ""
+
+#: class/class-admin.php:118
+msgid "Title"
+msgstr ""
+
+#: class/class-admin.php:119
+msgid "Layout"
+msgstr ""
+
+#: class/class-admin.php:120
+msgid "Usage shortcode"
+msgstr ""
+
+#: class/class-admin.php:121
+msgid "Author"
+msgstr ""
+
+#: class/class-admin.php:122
+msgid "Date"
+msgstr ""
+
+#: class/class-admin.php:155
+msgid " Select Template"
+msgstr ""
+
+#: class/class-admin.php:163
+msgid "Product Query options"
+msgstr ""
+
+#: class/class-admin.php:171
+msgid "Create layout elements"
+msgstr ""
+
+#: class/class-admin.php:180
+msgid "Usage"
+msgstr ""
+
+#: class/class-admin.php:212
+msgid "Grid"
+msgstr ""
+
+#: class/class-admin.php:217 class/class-admin.php:227
+msgid "List"
+msgstr ""
+
+#: class/class-admin.php:222
+msgid "List And Box"
+msgstr ""
+
+#: class/class-admin.php:232 class/class-admin.php:237
+msgid "Table"
+msgstr ""
+
+#: class/class-admin.php:277
+msgid "Table Heading Color:"
+msgstr ""
+
+#: class/class-admin.php:282
+msgid "Table Heading background Color:"
+msgstr ""
+
+#: class/class-admin.php:287
+msgid "Table Heading Font Size:"
+msgstr ""
+
+#: class/class-admin.php:300
+msgid ""
+"Pirmary Color <i class=\"ed_small\">(  box / list / Table Columns background "
+"Color)</i> :"
+msgstr ""
+
+#: class/class-admin.php:305
+msgid ""
+"Pirmary Color Hover <i class=\"ed_small\">(  box / list / Table Columns "
+"background Color)</i> :"
+msgstr ""
+
+#: class/class-admin.php:310
+msgid "Border Color :"
+msgstr ""
+
+#: class/class-admin.php:315
+msgid "Border Hover Color :"
+msgstr ""
+
+#: class/class-admin.php:320
+msgid "Border Size :"
+msgstr ""
+
+#: class/class-admin.php:327
+msgid "Number of List Item's  :"
+msgstr ""
+
+#: class/class-admin.php:332
+msgid "Number of columns  :"
+msgstr ""
+
+#: class/class-admin.php:337
+msgid "Frontend Order by filter"
+msgstr ""
+
+#: class/class-admin.php:341 class/class-admin.php:355
+msgid "Enable"
+msgstr ""
+
+#: class/class-admin.php:344 class/class-admin.php:358
+#: class/class-options.php:112
+msgid "Disable"
+msgstr ""
+
+#: class/class-admin.php:351
+msgid "Frontend pagination"
+msgstr ""
+
+#: class/class-admin.php:384
+msgid "Select Product :"
+msgstr ""
+
+#: class/class-admin.php:389
+msgid "All Product :"
+msgstr ""
+
+#: class/class-admin.php:393
+msgid " Select Product:"
+msgstr ""
+
+#: class/class-admin.php:399
+msgid "Featured Product"
+msgstr ""
+
+#: class/class-admin.php:402
+msgid "Sales Product"
+msgstr ""
+
+#: class/class-admin.php:405
+msgid "In Stock Product"
+msgstr ""
+
+#: class/class-admin.php:408
+msgid " Out of Stock Product"
+msgstr ""
+
+#: class/class-admin.php:415
+msgid "Filter by category :"
+msgstr ""
+
+#: class/class-admin.php:422
+msgid "All Category :"
+msgstr ""
+
+#: class/class-admin.php:426
+msgid " Select Category :"
+msgstr ""
+
+#: class/class-admin.php:447
+msgid "Filter by tag :"
+msgstr ""
+
+#: class/class-admin.php:450
+msgid " All Tag :"
+msgstr ""
+
+#: class/class-admin.php:454
+msgid " Select Tag :"
+msgstr ""
+
+#: class/class-admin.php:471
+msgid "Stock :"
+msgstr ""
+
+#: class/class-admin.php:474 class/class-admin.php:489
+#: class/class-views.php:756
+msgid "All"
+msgstr ""
+
+#: class/class-admin.php:477
+msgid "Only in stock"
+msgstr ""
+
+#: class/class-admin.php:480
+msgid "Only Out of stock"
+msgstr ""
+
+#: class/class-admin.php:486
+msgid "Date Range :"
+msgstr ""
+
+#: class/class-admin.php:492
+msgid "Today"
+msgstr ""
+
+#: class/class-admin.php:495
+msgid "Yesterday"
+msgstr ""
+
+#: class/class-admin.php:498
+msgid "This month"
+msgstr ""
+
+#: class/class-admin.php:501
+msgid "This Year"
+msgstr ""
+
+#: class/class-admin.php:504
+msgid "Last 7 Days"
+msgstr ""
+
+#: class/class-admin.php:507
+msgid "Last 30 Days"
+msgstr ""
+
+#: class/class-admin.php:510
+msgid "Last 120 Days"
+msgstr ""
+
+#: class/class-admin.php:513
+msgid "Last 365 Days"
+msgstr ""
+
+#: class/class-admin.php:516
+msgid "Custom Date Range"
+msgstr ""
+
+#: class/class-admin.php:522
+msgid "Start Date:"
+msgstr ""
+
+#: class/class-admin.php:527
+msgid "End Date :"
+msgstr ""
+
+#: class/class-admin.php:532
+msgid "Sort by :"
+msgstr ""
+
+#: class/class-admin.php:535 class/class-views.php:727
+msgid "Default sorting ( newness )"
+msgstr ""
+
+#: class/class-admin.php:538 class/class-views.php:728
+msgid "Sort by popularity"
+msgstr ""
+
+#: class/class-admin.php:541 class/class-views.php:729
+msgid "Sort by Price low to high"
+msgstr ""
+
+#: class/class-admin.php:544 class/class-views.php:730
+msgid "Sort by Price high to low"
+msgstr ""
+
+#: class/class-admin.php:547 class/class-views.php:731
+msgid "Sort by oldest"
+msgstr ""
+
+#: class/class-admin.php:550 class/class-views.php:732
+msgid "Sort by Product title a to z"
+msgstr ""
+
+#: class/class-admin.php:553 class/class-views.php:733
+msgid "Sort by Product title z to a"
+msgstr ""
+
+#: class/class-admin.php:556 class/class-views.php:734
+msgid "Sort by Rating"
+msgstr ""
+
+#: class/class-admin.php:562
+msgid "Products displayed per page:"
+msgstr ""
+
+#: class/class-admin.php:567
+msgid "Number of Single row :"
+msgstr ""
+
+#: class/class-admin.php:650
+msgid "Replace WooCommerce Shop Page"
+msgstr ""
+
+#: class/class-admin.php:653 class/class-admin.php:667
+#: class/class-admin.php:682
+msgid "Yes"
+msgstr ""
+
+#: class/class-admin.php:658 class/class-admin.php:672
+#: class/class-admin.php:687
+msgid "No"
+msgstr ""
+
+#: class/class-admin.php:664
+msgid "Replace WooCommerce Category Page"
+msgstr ""
+
+#: class/class-admin.php:678
+msgid "Replace WooCommerce Tags Page"
+msgstr ""
+
+#: class/class-editor.php:777
+msgid "Color :"
+msgstr ""
+
+#: class/class-editor.php:805
+msgid "Product Elements"
+msgstr ""
+
+#: class/class-notice.php:25
+msgid ""
+"<strong>Woo Product Multi Layout plugin require the WooCommerce plugin By "
+"WooThemes</strong>. If you already  have a  woocommerce please activate them."
+msgstr ""
+
+#: class/class-options.php:58
+msgid ""
+"Shop Page <span>Redirect WooCommerce Shop page to display product for "
+"woocommerce page.</span>"
+msgstr ""
+
+#: class/class-options.php:67
+msgid ""
+"Category Page <span>Redirect WooCommerce Category page to display product "
+"for woocommerce page.</span>"
+msgstr ""
+
+#: class/class-options.php:76
+msgid ""
+"Tag Page <span>Redirect WooCommerce Tag page to display product for "
+"woocommerce page.</span>"
+msgstr ""
+
+#: class/class-options.php:85
+msgid ""
+"Search Page <span>Redirect WooCommerce Search page to display product for "
+"woocommerce page.</span>"
+msgstr ""
+
+#: class/class-options.php:145
+msgid "Replace WooCommerce Page"
+msgstr ""
+
+#: class/class-options.php:198
+msgid "Settings"
+msgstr ""
+
+#: class/class-options.php:199
+msgid "Docs"
+msgstr ""
+
+#: class/class-options.php:200
+msgid "Support"
+msgstr ""
+
+#: class/class-views.php:126 class/class-views.php:130
+msgid "No product Layout found."
+msgstr ""
+
+#: class/class-views.php:133
+msgid "No product found."
+msgstr ""
+
+#: class/class-views.php:563 class/class-views.php:565
+msgid "Category:"
+msgid_plural "Categories:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: class/class-views.php:575 class/class-views.php:577
+msgid "Tag:"
+msgid_plural "Tag:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: class/class-views.php:584
+msgid "SKU:"
+msgstr ""
+
+#: class/class-views.php:585
+msgid "N/A"
+msgstr ""
+
+#: class/class-views.php:608 class/class-views.php:618
+msgid " in stock"
+msgstr ""
+
+#: class/class-views.php:610 class/class-views.php:620
+msgid "out of stock"
+msgstr ""
+
+#: class/class-views.php:700
+msgid "Showing the single result"
+msgstr ""
+
+#: class/class-views.php:702
+#, php-format
+msgid "Showing all %d results"
+msgstr ""
+
+#: class/class-views.php:704
+#, php-format
+msgctxt "%1$d = first, %2$d = last, %3$d = total"
+msgid "Showing %1$d – %2$d of %3$d results"
+msgstr ""
+
+#: class/class-views.php:746
+msgid "Show "
+msgstr ""
+
+#: class/class-views.php:749
+msgid "Default"
+msgstr ""
+
+#: class/class-views.php:750
+msgid "4"
+msgstr ""
+
+#: class/class-views.php:751
+msgid "8"
+msgstr ""
+
+#: class/class-views.php:752
+msgid "12"
+msgstr ""
+
+#: class/class-views.php:753
+msgid "15"
+msgstr ""
+
+#: class/class-views.php:754
+msgid "30"
+msgstr ""
+
+#: class/class-views.php:755
+msgid "80"
+msgstr ""
+
+#: class/class-views.php:765
+msgid "per page"
+msgstr ""

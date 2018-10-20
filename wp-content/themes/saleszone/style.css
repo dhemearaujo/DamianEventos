@@ -1,0 +1,14 @@
+/**
+ * Theme Name: SalesZone
+ * Text Domain: saleszone
+ * Theme URI: https://premmerce.com/saleszone-woocommerce-theme/
+ * Version: 2.0.4
+ * License: GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Author: Premmerce
+ * Author URI: https://premmerce.com
+ * Description: SalesZone  is a full-featured e-commerce WordPress theme - specially built for WooCommerce stores.This theme provides the optimal settings for all major WooCommerce and WordPress functional features. Plus, a great advantage of this theme is a seamless integration with all Premmerce plugins and this fact ensures both quick and smooth settup of the store interface and its  functionality. Here are the main theme advantages: Full WooCommerce Support, Full Premmerce Plugins Support, Responsive and retina ready, HTML5, CSS3 ready, Clean and valid code, SEO Optimised, Optimized for speed, One click demo content, Child Theme support, Automatic regular Updates, Documentation, Support, WPML support, Translation ready, Contact Form7, Social Login, MetaSlider Integrations. You can see a full demo of this theme here: http://saleszone-free.premmerce.com/
+ * Tags: two-columns, one-column, right-sidebar, e-commerce, custom-colors, custom-menu, custom-header, footer-widgets, theme-options, translation-ready, threaded-comments
+ *
+ * @fs_premium_only /child-themes/ , /acf-json/ , /functions/custom-types/ , /functions/shortcodes/ , /functions/admin/options/shop/shop-checkout.php ,  /functions/admin/options/shop/shop-homepage.php , /functions/admin/options/shop/shop-benefits.php , /functions/admin/options/typo/typo.php , /parts/header/layouts/header-layout_2.php , /parts/header/layouts/header-layout_3.php , /parts/header/layouts/header-layout_4.php , /parts/header/layouts/header-layout_5.php , /functions/admin/options/shop/shop-payment-icons.php , /woocommerce/loop/quick-view-button.php , /woocommerce/content-product_snippet.php , /functions/google-fonts.php , /parts/shortcode-templates/benefits/ , /parts/shortcode-templates/premmerce-brands/ , /parts/shortcode-templates/premmerce-catalog/, /parts/shortcode-templates/premmerce-catalog-menu/ , /parts/shortcode-templates/premmerce-catalog-tree/ , /parts/shortcode-templates/premmerce-recent-pos/ , /parts/shortcode-templates/premmerce_scheduled_sale_products/ ,  /taxonomy-album.php , /parts/gallery/ , /single-gallery.php, /archive-gallery.php , /woocommerce/single-product/social-share.php
+ */

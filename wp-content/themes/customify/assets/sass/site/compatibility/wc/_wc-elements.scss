@@ -1,0 +1,102 @@
+/*
+# Buttons
+# Price amount
+*/
+
+.button.add_to_cart_button,
+.button.alt,
+.button.added_to_cart,
+.button.checkout,
+.button.product_type_grouped,
+.button.product_type_external,
+.button.product_type_variable
+{
+    background: $color_secondary;
+    position: relative;
+    cursor: pointer;
+    &.loading {
+        opacity: 0.5;
+        padding-right: 2.618em;
+        &:after {
+            font-family: 'WooCommerce';
+            content: '\e01c';
+            vertical-align: top;
+            font-weight: 400;
+            position: absolute;
+            top: 0.02em;
+            right: 1em;
+            animation: spin 2s linear infinite;
+        }
+        &.added:after {
+            font-family: 'WooCommerce';
+            content: '\e017';
+            margin-left: 0.53em;
+            vertical-align: bottom;
+        }
+    }
+}
+
+.products {
+    .button.add_to_cart_button,
+    .button.added_to_cart,
+    .button.product_type_variable,
+    .wc-product-contents .button
+    {
+        font-size: 0.8em;
+        min-height: auto;
+    }
+}
+.single_add_to_cart_button {
+    font-size: 1.04em;
+}
+
+/* Remove Button */
+a.remove {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    border-radius: 100px;
+    font-family: sans-serif !important;
+    font-size: 16px !important;
+    font-weight: normal;
+    line-height: 16px !important;
+    display: inline-block;
+    text-align: center;
+    &:hover {
+        color: red;
+        border-color: red;
+    }
+}
+
+a.remove2x {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    border-radius: 100px;
+    font-family: sans-serif !important;
+    font-size: 18px !important;
+    font-weight: normal;
+    line-height: 31px;
+    display: inline-block;
+    text-align: center;
+    &:hover {
+        color: red;
+        border-color: red;
+    }
+}
+
+
+/* Price */
+.price {
+    line-height: 1;
+}
+
+.site-content, .cart-dropdown-box {
+    span.amount, .price {
+        font-weight: 500;
+        color: #252525;
+    }
+}
+

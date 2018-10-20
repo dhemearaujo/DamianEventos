@@ -1,0 +1,465 @@
+/*
+   Document   : woo_multi_layout.css
+   Author: Saiful
+   Author e-mail: e2getway@gmail.com
+   Version: 1.0.0
+   Created: 24-01-2016
+   File Description: Default CSS file of frontend ( woo_multi_layout )
+*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Default Common CSS For All layout 
+2. Filter & Pagination
+3. Filter & Pagination
+4. Default Grid
+5. Default Grid Responsive Break Piont
+6. Grid Layout Default CSS 
+7. Table Layout Default CSS
+8. Odd Even Layout Default CSS
+9. Carousel Default CSS
+-------------------------------------------------------------------*/
+
+/*
+* === Default Common CSS For All layout   ===
+*/
+.clr{
+	clear:both;	
+}
+.woo_image_wrp{
+	display:block;
+	overflow:hidden;	
+}
+
+.woo__mulit__layout h3{
+	font-size:20px;
+	display:block;
+	font-weight:normal;
+}
+.woo__mulit__layout a,
+.woocommerce .woo__mulit__layout a{
+	color:#000;
+	border:none;
+	text-decoration:none;
+}
+.woo__mulit__layout .button,
+.woocommerce .woo__mulit__layout .button,
+.woo__mulit__layout .added_to_cart,
+.woocommerce .woo__mulit__layout .added_to_cart{
+	margin:20px 5px 10px 5px;
+	padding:8px 20px;
+	display:inline-block;
+	text-decoration:none;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	background:#999;
+	color:#FFF;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.woo_mulit_price{
+	font-size:20px;	
+}
+.woo_mulit_categories,
+.woo_mulit_tagged{
+	display:block;
+	padding:4px 0px;	
+}
+.woo_mulit_categories a,
+.woo_mulit_tagged a{
+	color:#F00;
+	text-decoration:none;
+}
+.woo_mulit_categories a:hover,
+.woo_mulit_tagged a:hover{
+	color:#D60C11;
+	text-decoration:underline;
+}
+
+
+.woocommerce .woo__mulit__layout span.onsale {
+    font-weight: 700;
+    position: absolute;
+    text-align: center;
+	background:#F00;
+	font-size:15px;
+	padding:10px;
+	right:0px;
+	top:0px;
+	width:auto;
+	color:#FFF;
+	left:auto;
+}
+
+.woo_mulit_layout_product_image{
+	position:relative;
+	display:inline-block;
+	overflow:hidden;
+}
+.woo_mulit_layout_product_image img{
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	max-width:100%;
+	height:auto;	
+}
+.woo_mulit_layout_product_image.fadein img:hover{
+	opacity:0.5;
+}
+.woo_mulit_layout_product_image.zoom img:hover{
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.3);
+}
+
+.woo_mulit_readmore a{
+	padding:5px 20px;
+	display:inline-block;
+	background:#C4C4C4;
+	border:none;
+	-webkit-border-radius:3px;	
+	border-radius:3px;
+	margin:10px 0px;
+}
+/*
+* === Filter & Pagination   ===
+*/
+.woo__mulit__layout__sorter{
+	display:block;
+	clear:both;
+	padding:20px;
+	border:1px solid #CECECE;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	margin:2px;
+	margin-bottom:20px;
+}
+.woo_mulit__layout__result__count{
+	float:left;	
+}
+.sort_multi_layout_orderby{
+	float:right;
+}
+.sort_multi_layout_orderby div{
+	display:inline-block;
+	margin:0px 10px;	
+}
+
+
+
+/*
+* === Default Grid   ===
+*/
+[class*="ed__col__"] {
+	display:inline-block;
+	padding: 10px;
+	vertical-align:top;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ed__row::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+.ed__row {
+	margin: 0px -7px;
+}
+.ed__col__1 {
+	width: 100%;
+}
+.ed__col__2 {
+	width: 50%;
+}
+.ed__col__3 {
+	width: 33.33%;
+}
+.ed__col__4 {
+	width: 25%;
+}
+.ed__col__5 {
+	width: 20%;
+}
+.ed__col__6 {
+	width: 16.66%;
+}
+.ed__col__7 {
+	width: 14.24%;
+}
+.ed__col__8 {
+	width: 12.5%;
+}
+.ed__col__9 {
+	width: 11.11%;
+}
+
+/*
+* === Default Grid Responsive Break Piont   ===
+*/
+@media only screen and (min-width : 320px) and (max-width :600px) {
+	.ed__col__md__1 {
+		width: 100%;
+	}
+	.ed__col__md__2 {
+		width: 50%;
+	}
+	.ed__col__md__3 {
+		width: 33.33%;
+	}
+	.ed__col__md__4 {
+		width: 25%;
+	}
+	.ed__col__md__5 {
+		width: 20%;
+	}
+	.ed__col__md__6 {
+		width: 16.66%;
+	}
+	.ed__col__md__7 {
+		width: 14.24%;
+	}
+	.ed__col__md__8 {
+		width: 12.5%;
+	}
+	.ed__col__md__9 {
+		width: 11.11%;
+	}
+
+}
+
+@media only screen and (min-width : 600px) and (max-width : 800px) {
+	.ed__col__sm__1 {
+		width: 100%;
+	}
+	.ed__col__sm__2 {
+		width: 50%;
+	}
+	.ed__col__sm__3 {
+		width: 33.33%;
+	}
+	.ed__col__sm__4 {
+		width: 25%;
+	}
+	.ed__col__sm__5 {
+		width: 20%;
+	}
+	.ed__col__sm__6 {
+		width: 16.66%;
+	}
+	.ed__col__sm__7 {
+		width: 14.24%;
+	}
+	.ed__col__sm__8 {
+		width: 12.5%;
+	}
+	.ed__col__sm__9 {
+		width: 11.11%;
+	}
+
+}
+
+/*
+* ===  Grid Layout Default CSS ===
+*/
+
+.woo__mulit__layout__grid{
+	display:block;
+	clear:both;
+	width:100%;
+	text-align:center;
+	overflow:hidden;
+	margin:0px;
+	padding:0px;
+}
+
+/*
+* ===  Grid Layout Default CSS ===
+*/
+.woo__mulit__layout__list__views{
+	display:block;
+	clear:both;
+	width:100%;
+	text-align:center;
+	overflow:hidden;
+	margin:0px;
+	padding:0px;	
+}
+.woo__mulit__layout__list__views .item{
+	list-style:none;
+	display:block;
+	border-bottom:1px solid #D1D1D1;
+	height:auto;
+	text-align:left;
+	padding:6px;
+	margin:6px 0px;
+	
+}
+
+.woo__mulit__layout__list__views .woo_mulit_layout_product_image{
+	float:left;
+	max-width:320px;
+}
+.woo__mulit__layout__list__views .list_view_pull_right{
+	float:right;
+	width:calc(100% - 333px);
+	max-width:100%;
+
+	padding:15px 0px;
+}
+.woo__mulit__layout__list__views .list_view_pull_right.fullwidth{
+	float:none;
+	display:block;
+	width:100%;
+		
+}
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+	.woo__mulit__layout__list__views .woo_mulit_layout_product_image{
+		display:block;
+		float:none;
+		text-align:center;
+		margin:0px auto;
+	}
+	
+	.woo__mulit__layout__list__views .item{
+		padding:2%;	
+	}
+	.woo__mulit__layout__list__views .list_view_pull_right{
+		display:block;
+		width:100%;	
+		float:none;
+		text-align:center;
+	}
+}
+/*
+* ===  Table Layout Default CSS ===
+*/
+.woo__mulit__layout__table__views{
+	margin-top:20px;
+	vertical-align:top;
+	margin:0px;
+	padding:0px;
+}
+.woo__mulit__layout__table__views td,
+.woo__mulit__layout__table__views th{
+	padding:5px;	
+}
+/*
+* ===  Odd Even Layout Default CSS ===
+*/
+.woo__mulit__layout__odd_even_views{
+	display:block;
+	margin:0px;
+	padding:0px;
+	list-style:none;	
+}
+.woo__mulit__layout__table__views .woo_mulit_layout_product_image img{
+	max-width:120px;
+	width:100%;
+	height:auto;	
+}
+
+.woo__mulit__layout__odd_even_views .grid_wrp{
+	border:1px solid #CCC;
+	margin-bottom:20px;
+	text-align:center;
+	vertical-align:top;
+}
+/*
+* ===  Carousel Default CSS ===
+*/
+
+.woo__mulit__layout__carousel__views{
+	position:relative;	
+}
+
+.woo__mulit__layout__carousel__views .owl-controls{
+	display:block;
+	padding:25px 0px;
+	text-align:center;
+	position:static!important;
+}
+.woo__mulit__layout__carousel__views .owl-pagination{
+	position:static!important;	
+}
+.woo__mulit__layout__carousel__views .owl-buttons div:before,
+.woo__mulit__layout__carousel__views .owl-buttons div:after{
+	content:"";
+	display:none!important;	
+}
+.woo__mulit__layout__carousel__views .owl-buttons div{
+	position:absolute;
+	top:40%;
+	z-index:9999;
+	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	left:15px;
+	width:40px!important;
+	height:40px!important;
+	padding:0px 10px;
+	font-size:13px;
+	margin:0px!important;
+}
+.woo__mulit__layout__carousel__views .owl-buttons div.owl-prev{
+	left:auto!important;
+	right:-14px;
+}
+.woo__mulit__layout__carousel__views .item{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align:center;
+	padding:5px;
+}
+.woo__mulit__layout__carousel__views .owl-buttons{
+	display:block;
+	width:100%;
+	clear:both;
+}
+
+/*
+* ===  Odd Even CSS ===
+*/
+.woo__mulit__layout__odd_even_views .woo_mulit_layout_product_image{
+	margin-bottom:-6px;
+}
+.woo__mulit__layout__slider__views  .item{
+	position:relative;	
+}
+.woo__mulit__layout__slider__views .woo__mulitfly__over{
+	background:rgba(224,224,224,0.5);
+	position:absolute;
+	padding:15px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	text-align:center;
+}
+.woo__mulit__layout__slider__views{
+	position:relativee;	
+}
+.woo__mulit__layout__slider__views .owl-buttons{
+	position:absolute;
+	left:0px;
+	right:0px;
+
+	top:50%;	
+}
+.woo__mulit__layout__slider__views .owl-buttons .owl-prev,
+.woo__mulit__layout__slider__views .owl-buttons .owl-next{
+	width:45px!important;
+	height:45px!important;
+	padding-top:8px;
+	font-size:25px;
+}
+.woo__mulit__layout__slider__views .owl-buttons .owl-prev{
+	float:right;	
+}
+.woo__mulit__layout__slider__views .owl-buttons .owl-next{
+	float:left;
+}
