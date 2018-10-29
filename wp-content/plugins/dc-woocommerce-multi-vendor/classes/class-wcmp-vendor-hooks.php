@@ -56,7 +56,7 @@ class WCMp_Vendor_Hooks {
     public function wcmp_get_vendor_dashboard_navigation() {
         $vendor_nav = array(
             'dashboard'            => array(
-                'label'       => __( 'Dashboard', 'dc-woocommerce-multi-vendor' )
+                'label'       => __( 'Painel do Vendedor', 'dc-woocommerce-multi-vendor' )
                 , 'url'         => wcmp_get_vendor_dashboard_endpoint_url( 'dashboard' )
                 , 'capability'  => apply_filters( 'wcmp_vendor_dashboard_menu_dashboard_capability', true )
                 , 'position'    => 0
@@ -65,7 +65,7 @@ class WCMp_Vendor_Hooks {
                 , 'nav_icon'    => 'wcmp-font ico-dashboard-icon'
             ),
             'store-settings'       => array(
-                'label'       => __( 'Store Settings', 'dc-woocommerce-multi-vendor' )
+                'label'       => __( 'Configurações do Vendedor', 'dc-woocommerce-multi-vendor' )
                 , 'url'         => '#'
                 , 'capability'  => apply_filters( 'wcmp_vendor_dashboard_menu_store_settings_capability', true )
                 , 'position'    => 10
@@ -87,7 +87,7 @@ class WCMp_Vendor_Hooks {
                         , 'nav_icon'    => 'wcmp-font ico-policies-icon'
                     ),
                     'vendor-billing'  => array(
-                        'label'       => __( 'Billing', 'dc-woocommerce-multi-vendor' )
+                        'label'       => __( 'Conta PayPal', 'dc-woocommerce-multi-vendor' )
                         , 'url'         => wcmp_get_vendor_dashboard_endpoint_url( get_wcmp_vendor_settings( 'wcmp_vendor_billing_endpoint', 'vendor', 'general', 'vendor-billing' ) )
                         , 'capability'  => apply_filters( 'wcmp_vendor_dashboard_menu_vendor_billing_capability', true )
                         , 'position'    => 30
@@ -107,13 +107,13 @@ class WCMp_Vendor_Hooks {
                 , 'nav_icon'    => 'wcmp-font ico-store-settings-icon'
             ),
             'vendor-products'      => array(
-                'label'       => __( 'Product Manager', 'dc-woocommerce-multi-vendor' )
+                'label'       => __( 'Gerenciar Ingressos', 'dc-woocommerce-multi-vendor' )
                 , 'url'         => '#'
                 , 'capability'  => apply_filters( 'wcmp_vendor_dashboard_menu_vendor_products_capability', 'edit_products' )
                 , 'position'    => 20
                 , 'submenu'     => array(
                     'products'    => array(
-                        'label'       => __( 'All Products', 'dc-woocommerce-multi-vendor' )
+                        'label'       => __( 'Ingressos Publicados', 'dc-woocommerce-multi-vendor' )
                         , 'url'         => apply_filters( 'wcmp_vendor_products', wcmp_get_vendor_dashboard_endpoint_url( get_wcmp_vendor_settings( 'wcmp_products_endpoint', 'vendor', 'general', 'products' ) ) )
                         , 'capability'  => apply_filters( 'wcmp_vendor_dashboard_menu_products_capability', 'edit_products' )
                         , 'position'    => 10
@@ -121,7 +121,7 @@ class WCMp_Vendor_Hooks {
                         , 'nav_icon'    => 'wcmp-font ico-product-manager-icon'
                     ),
                     'add-product' => array(
-                        'label'       => __( 'Add Product', 'dc-woocommerce-multi-vendor' )
+                        'label'       => __( 'Adicionar Ingresso', 'dc-woocommerce-multi-vendor' )
                         , 'url'         => apply_filters( 'wcmp_vendor_submit_product', wcmp_get_vendor_dashboard_endpoint_url( get_wcmp_vendor_settings( 'wcmp_add_product_endpoint', 'vendor', 'general', 'add-product' ) ) )
                         , 'capability'  => apply_filters( 'wcmp_vendor_dashboard_menu_add_product_capability', 'edit_products' )
                         , 'position'    => 20
@@ -212,7 +212,7 @@ class WCMp_Vendor_Hooks {
                 , 'nav_icon'    => 'wcmp-font ico-payments-icon'
             ),
             'vendor-knowledgebase' => array(
-                'label'       => __( 'Knowledgebase', 'dc-woocommerce-multi-vendor' )
+                'label'       => __( 'Ajuda', 'dc-woocommerce-multi-vendor' )
                 , 'url'         => wcmp_get_vendor_dashboard_endpoint_url( get_wcmp_vendor_settings( 'wcmp_vendor_knowledgebase_endpoint', 'vendor', 'general', 'vendor-knowledgebase' ) )
                 , 'capability'  => apply_filters( 'wcmp_vendor_dashboard_menu_vendor_knowledgebase_capability', true )
                 , 'position'    => 70

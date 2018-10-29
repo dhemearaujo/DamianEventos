@@ -30,7 +30,7 @@ class WCMp_Settings_Capabilities_Product {
             "subsection" => "{$this->subsection}",
             "sections"   => array(
                 "products_capability"                  => array(
-                    "title"  => __( 'Products Capability', 'dc-woocommerce-multi-vendor' ),
+                    "event"  => __( 'Products Capability', 'dc-woocommerce-multi-vendor' ),
                     "fields" => array(
                         "is_submit_product"                => array( 'title' => __( 'Submit Products', 'dc-woocommerce-multi-vendor' ), 'type' => 'checkbox', 'id' => 'is_submit_product', 'label_for' => 'is_submit_product', 'text' => __( 'Allow vendors to submit products for approval/publishing.', 'dc-woocommerce-multi-vendor' ), 'name' => 'is_submit_product', 'value' => 'Enable' ), // Checkbox
                         "is_published_product"             => array( 'title' => __( 'Publish Products', 'dc-woocommerce-multi-vendor' ), 'type' => 'checkbox', 'id' => 'is_published_product', 'label_for' => 'is_published_product', 'name' => 'is_published_product', 'text' => __( 'If checked, products uploaded by vendors will be directly published without admin approval.', 'dc-woocommerce-multi-vendor' ), 'value' => 'Enable' ), // Checkbox

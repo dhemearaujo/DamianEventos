@@ -23,12 +23,12 @@
     transition: none;
     @include border-radius(0, 0, 0, 0);
     @include box-shadow(none);
-    background: none;
+    background: #812064;
     border: 0;
     bottom: auto;
     box-sizing: border-box;
     clip: auto;
-    color: $panel_font_color;
+    color: #812064;
     display: block;
     float: none;
     font-family: $panel_font_family;

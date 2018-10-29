@@ -119,7 +119,7 @@ class WCMp_Product {
         global $product, $WCMp;
         $title = apply_filters('wcmp_more_vendors_tab', __('More Offers', 'dc-woocommerce-multi-vendor'));
         $tabs['singleproductmultivendor'] = array(
-            'title' => $title,
+            'Nome do Evento' => $title,
             'priority' => 80,
             'callback' => array($this, 'product_single_product_multivendor_tab_template')
         );

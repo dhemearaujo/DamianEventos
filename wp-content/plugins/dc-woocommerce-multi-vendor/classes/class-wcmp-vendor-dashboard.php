@@ -892,7 +892,7 @@ Class WCMp_Admin_Dashboard {
                 , 'nav_icon' => 'wcmp-font ico-my-shop-icon'
             ),
             'add-product' => array(
-                'label' => __('Add Product', 'dc-woocommerce-multi-vendor')
+                'label' => __('Adicionar Ingresso', 'dc-woocommerce-multi-vendor')
                 , 'url' => apply_filters('wcmp_vendor_submit_product', esc_url(wcmp_get_vendor_dashboard_endpoint_url(get_wcmp_vendor_settings('wcmp_add_product_endpoint', 'vendor', 'general', 'add-product'))))
                 , 'class' => ''
                 , 'capability' => apply_filters( 'wcmp_vendor_dashboard_menu_add_product_capability', 'edit_products' )
@@ -910,7 +910,7 @@ Class WCMp_Admin_Dashboard {
                 , 'nav_icon' => 'wcmp-font ico-orders-icon'
             ),
             'announcement' => array(
-                'label' => __('Announcement', 'dc-woocommerce-multi-vendor')
+                'label' => __('Notificações', 'dc-woocommerce-multi-vendor')
                 , 'url' => esc_url(wcmp_get_vendor_dashboard_endpoint_url(get_wcmp_vendor_settings('wcmp_vendor_announcements_endpoint', 'vendor', 'general', 'vendor-announcements')))
                 , 'class' => ''
                 , 'capability' => apply_filters('wcmp_show_vendor_announcements', true)
@@ -938,7 +938,7 @@ Class WCMp_Admin_Dashboard {
                 , 'nav_icon' => 'wcmp-font ico-storefront-icon'
             ),
             'profile' => array(
-                'label' => __('Profile management', 'dc-woocommerce-multi-vendor')
+                'label' => __('Gerenciar Perfil', 'dc-woocommerce-multi-vendor')
                 , 'url' => esc_url(wcmp_get_vendor_dashboard_endpoint_url(get_wcmp_vendor_settings('wcmp_profile_endpoint', 'vendor', 'general', 'profile')))
                 , 'class' => ''
                 , 'capability' => true
@@ -947,7 +947,7 @@ Class WCMp_Admin_Dashboard {
                 , 'nav_icon' => 'wcmp-font ico-user-icon'
             ),
             'wp-admin' => array(
-                'label' => __('WordPress backend', 'dc-woocommerce-multi-vendor')
+                'label' => __('Painel Secundário', 'dc-woocommerce-multi-vendor')
                 , 'url' => esc_url(admin_url())
                 , 'class' => ''
                 , 'capability' => true
@@ -956,7 +956,7 @@ Class WCMp_Admin_Dashboard {
                 , 'nav_icon' => 'wcmp-font ico-wp-backend-icon'
             ),
             'logout' => array(
-                'label' => __('Logout', 'dc-woocommerce-multi-vendor')
+                'label' => __('Sair', 'dc-woocommerce-multi-vendor')
                 , 'url' => esc_url(wp_logout_url(get_permalink(wcmp_vendor_dashboard_page_id())))
                 , 'class' => ''
                 , 'capability' => true
@@ -998,7 +998,7 @@ Class WCMp_Admin_Dashboard {
             $this->wcmp_add_dashboard_widget('wcmp_vendor_pending_shipping', __('Pending Shipping', 'dc-woocommerce-multi-vendor'), array(&$this, 'wcmp_vendor_pending_shipping'));
         endif;
         if (current_user_can('edit_products')) {
-            $this->wcmp_add_dashboard_widget('wcmp_vendor_product_stats', __('Product Stats', 'dc-woocommerce-multi-vendor'), array(&$this, 'wcmp_vendor_product_stats'), 'side', '', array('action' => array('title' => __('Add Product', 'dc-woocommerce-multi-vendor'), 'link' => esc_url(wcmp_get_vendor_dashboard_endpoint_url(get_wcmp_vendor_settings('wcmp_add_product_endpoint', 'vendor', 'general', 'add-product'))))));
+            $this->wcmp_add_dashboard_widget('wcmp_vendor_product_stats', __('Status do Ingresso', 'dc-woocommerce-multi-vendor'), array(&$this, 'wcmp_vendor_product_stats'), 'side', '', array('action' => array('title' => __('Add Product', 'dc-woocommerce-multi-vendor'), 'link' => esc_url(wcmp_get_vendor_dashboard_endpoint_url(get_wcmp_vendor_settings('wcmp_add_product_endpoint', 'vendor', 'general', 'add-product'))))));
             $this->wcmp_add_dashboard_widget('wcmp_vendor_product_sales_report', __('Product Sales Report', 'dc-woocommerce-multi-vendor'), array(&$this, 'wcmp_vendor_product_sales_report'));
         }
         if (get_wcmp_vendor_settings('is_sellerreview', 'general') == 'Enable') {

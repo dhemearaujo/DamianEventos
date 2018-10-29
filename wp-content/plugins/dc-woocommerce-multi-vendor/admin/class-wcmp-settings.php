@@ -237,9 +237,9 @@ class WCMp_Settings {
         ) );
         $screen->add_help_tab( array(
             'id'      => 'wcmp_knowledgebase',
-            'title'   => __( 'Knowledgebase', 'dc-woocommerce-multi-vendor' ),
-            'content' => '<h2>Knowledgebase</h2>'
-            . '<p>If you would like to learn more about using WC Marketplace, please follow our <a target="_blank" href="https://wc-marketplace.com/knowledgebase/">knowledgebase</a> section.</p>'
+            'title'   => __( 'Help', 'dc-woocommerce-multi-vendor' ),
+            'content' => '<h2>Help</h2>'
+            . '<p>If you would like to learn more about using WC Marketplace, please follow our <a target="_blank" href="https://wc-marketplace.com/knowledgebase/">Help</a></p>'
         ) );
         $screen->add_help_tab( array(
             'id'      => 'wcmp_onboard_tab',

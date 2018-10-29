@@ -38,7 +38,7 @@ class WCMp_Endpoints {
                 'endpoint' => get_wcmp_vendor_settings('wcmp_vendor_announcements_endpoint', 'vendor', 'general', 'vendor-announcements')
             )
             , 'profile' => array(
-                'label' => __('Profile management', 'dc-woocommerce-multi-vendor'),
+                'label' => __('Gerenciar', 'dc-woocommerce-multi-vendor'),
                 'endpoint' => get_wcmp_vendor_settings('wcmp_profile_endpoint', 'vendor', 'general', 'profile'),
                 'icon' => 'wcmp-font ico-user-icon'
             )
