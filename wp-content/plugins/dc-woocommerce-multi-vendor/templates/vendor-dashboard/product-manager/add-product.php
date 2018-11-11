@@ -145,6 +145,14 @@ if (!empty($pro_id)) {
             $download_expiry = get_post_meta($product_id, '_download_expiry', true);
         }
 
+        if ($is_downloadable == 'disabled') {
+            $downloadable_files = get_post_meta($product_id, '_downloadable_files', true);
+            if (!$downloadable_files)
+                $downloadable_files = array();
+            $download_limit = get_post_meta($product_id, '_download_limit', true);
+            $download_expiry = get_post_meta($product_id, '_download_expiry', true);
+        }
+
         // Product Images
         $featured_img = ($product->get_image_id()) ? $product->get_image_id() : '';
         if ($featured_img)
@@ -392,7 +400,7 @@ $attribute_taxonomies = wc_get_attribute_taxonomies();
             $custom_product_type_attribute = array();
             $disable_other_product_type = apply_filters('wcmp_disable_other_product_type', true);
             if($disable_other_product_type){
-                $custom_product_type_attribute = array('disabled' => 'disabled');
+                $custom_product_type_attribute = array('enable' => 'enable');
             }
             if (!empty($product_types)) {
                 if (!$product_id) {
@@ -577,8 +585,7 @@ $attribute_taxonomies = wc_get_attribute_taxonomies();
                 ?>
 
             </div>
-            <h3 class="pro_ele_head simple non-external non-grouped variable nonvirtual <?php if (apply_filters("vendor_product_shipping_hide",false)) echo ' vendor_hidden'; ?>"></h3>
-            <div class="pro_ele_block simple non-external non-grouped variable nonvirtual <?php if (apply_filters("vendor_product_shipping_hide",false)) echo ' vendor_hidden'; ?>">
+          
 
                 <?php
                 //$WCMp->wcmp_frontend_fields->wcmp_generate_form_field(apply_filters('wcmp_fpm_fields_shipping', array("weight" => array('label' => __('Weight', 'dc-woocommerce-multi-vendor') . ' (' . get_option('woocommerce_weight_unit', 'kg') . ')', 'type' => 'text', 'class' => 'regular-text pro_ele simple variable', 'label_class' => 'pro_title', 'value' => $weight),
@@ -603,287 +610,9 @@ $attribute_taxonomies = wc_get_attribute_taxonomies();
 
                 </div>
             <?php } ?>
-        <h3 class="pro_ele_head simple variable external grouped <?php if (apply_filters("vendor_product_attributes_hide",false)) echo ' vendor_hidden'; ?>"><?php _e('Attributes', 'dc-woocommerce-multi-vendor'); ?></h3>
-        <div class="pro_ele_block simple variable external grouped <?php if (apply_filters("vendor_product_attributes_hide",false)) echo ' vendor_hidden'; ?>">
-
-            <div>
-                <div class="form-group">
-                    <div class="col-md-4">
-                        <select name="fpm_attribute_taxonomy" class="fpm_attribute_taxonomy form-control">
-                            <option value=""><?php _e('Custom product attribute', 'dc-woocommerce-multi-vendor'); ?></option>
-                            <?php
-                            if (!empty($attribute_taxonomies)) {
-                                foreach ($attribute_taxonomies as $tax) {
-                                    $attribute_taxonomy_name = wc_attribute_taxonomy_name($tax->attribute_name);
-                                    $label = $tax->attribute_label ? $tax->attribute_label : $tax->attribute_name;
-                                    echo '<option value="' . esc_attr($attribute_taxonomy_name) . '">' . esc_html($label) . '</option>';
-                                }
-                            }
-                            ?>
-                        </select>
-                    </div>
-                    <div class="col-md-4">
-                        <button type="button" class="button fpm_add_attribute btn btn-default"><?php _e('Add', 'dc-woocommerce-multi-vendor'); ?></button>
-                    </div>
-                </div>
-          
-                <?php
-                $WCMp->wcmp_frontend_fields->wcmp_generate_form_field(apply_filters('wcmp_fpm_fields_attributes', array(
-                    "attributes" => array('label' => __('Attributes', 'dc-woocommerce-multi-vendor'), 'type' => 'multiinput', 'class' => 'regular-text pro_ele simple variable external grouped', 'label_class' => 'pro_title', 'value' => $attributes, 'options' => array(
-                            "term_name" => array('type' => 'hidden', 'label_class' => 'pro_title'),
-                            "name" => array('label' => __('Name', 'dc-woocommerce-multi-vendor'), 'type' => 'text', 'class' => 'regular-text pro_ele simple variable external grouped', 'label_class' => 'pro_title'),
-                            "value" => array('label' => __('Value(s):', 'dc-woocommerce-multi-vendor'), 'type' => 'textarea', 'class' => 'regular-textarea pro_ele simple variable external grouped', 'placeholder' => sprintf( esc_attr__( 'Enter some text, or some attributes by "%s" separating values.', 'dc-woocommerce-multi-vendor' ), WC_DELIMITER ), 'label_class' => 'pro_title'),
-                            "is_visible" => array('label' => __('Visible on the product page', 'dc-woocommerce-multi-vendor'), 'type' => 'checkbox', 'value' => 'enable', 'class' => 'regular-checkbox pro_ele simple variable external grouped', 'label_class' => 'pro_title checkbox_title'),
-                            "is_variation" => array('label' => __('Use as Variation', 'dc-woocommerce-multi-vendor'), 'type' => 'checkbox', 'value' => 'enable', 'class' => 'regular-checkbox pro_ele variable variable-subscription', 'label_class' => 'pro_title checkbox_title pro_ele variable variable-subscription'),
-                            "tax_name" => array('type' => 'hidden'),
-                            "is_taxonomy" => array('type' => 'hidden')
-                        ))
-                )));
-
-                if (!empty($attributes_select_type)) {
-                    $WCMp->wcmp_frontend_fields->wcmp_generate_form_field(apply_filters('product_simple_fields_attributes', array(
-                        "select_attributes" => array('type' => 'multiinput', 'class' => 'regular-text pro_ele simple variable external grouped booking', 'label_class' => 'pro_title', 'value' => $attributes_select_type, 'options' => array(
-                                "term_name" => array('type' => 'hidden'),
-                                "name" => array('label' => __('Name', 'dc-woocommerce-multi-vendor'), 'type' => 'text', 'class' => 'regular-text pro_ele simple variable external grouped booking', 'label_class' => 'pro_title'),
-                                "value" => array('label' => __('Value(s):', 'dc-woocommerce-multi-vendor'), 'type' => 'select', 'attributes' => array('multiple' => 'multiple', 'style' => 'width: 60%;'), 'class' => 'regular-select pro_ele simple variable external grouped booking', 'label_class' => 'pro_title'),
-                                "is_visible" => array('label' => __('Visible on the product page', 'dc-woocommerce-multi-vendor'), 'type' => 'checkbox', 'value' => 'enable', 'class' => 'regular-checkbox pro_ele simple variable external grouped booking', 'label_class' => 'pro_title checkbox_title'),
-                                "is_variation" => array('label' => __('Use as Variation', 'dc-woocommerce-multi-vendor'), 'type' => 'checkbox', 'value' => 'enable', 'class' => 'regular-checkbox pro_ele variable variable-subscription', 'label_class' => 'pro_title checkbox_title pro_ele variable variable-subscription'),
-                                "tax_name" => array('type' => 'hidden'),
-                                "is_taxonomy" => array('type' => 'hidden')
-                            ))
-                    )));
-                }
-                ?>
-            </div>
-        </div>
-        <?php do_action('after_wcmp_fpm_attributes', $product_id); ?>
-
-        <h3 class="pro_ele_head simple variable external grouped <?php if (apply_filters("vendor_product_linked_hide",false)) echo ' vendor_hidden'; ?>"><?php _e('Linked Products', 'dc-woocommerce-multi-vendor'); ?></h3>
-        <div class="pro_ele_block simple variable external grouped <?php if (apply_filters("vendor_product_linked_hide",false)) echo ' vendor_hidden'; ?>">
-            <div class="form-group">
-<!--                <p class="upsell_ids pro_ele pro_title simple variable external grouped"><strong><?php _e('Up-sells', 'dc-woocommerce-multi-vendor'); ?></strong><span class="img_tip" data-desc="Up-sells are products which you recommend instead of the currently viewed product, for example, products that are more profitable or better quality or more expensive."></span></p>-->
-                <label class="control-label form-label col-sm-3" for="upsell_ids"><?php _e('Up-sells', 'dc-woocommerce-multi-vendor'); ?><span class="img_tip" data-desc="<?php _e('Up-sells are products which you recommend instead of the currently viewed product, for example, products that are more profitable or better quality or more expensive.', 'dc-woocommerce-multi-vendor'); ?>"></span></label>
-                <div class="col-md-6 col-sm-9">
-                    <select id="upsell_ids" name="upsell_ids[]" class="form-control regular-select pro_ele simple variable external grouped" multiple="multiple" style="width: 100%;">
-                        <?php
-                        if ($products_array)
-                            foreach ($products_array as $products_single) {
-                                echo '<option value="' . esc_attr($products_single->ID) . '"' . selected(in_array($products_single->ID, $upsell_ids), true, false) . '>' . esc_html($products_single->post_title) . '</option>';
-                            }
-                        ?>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group non-grouped non-external">
-            <!--<p class="crosssell_ids pro_ele pro_title simple variable external grouped"><strong><?php _e('Cross-sells', 'dc-woocommerce-multi-vendor'); ?></strong><span class="img_tip" data-desc="Cross-sells are products which you promote in the cart, based on the current product."></span></p>-->
-                <label class="control-label form-label col-sm-3" for="crosssell_ids"><?php _e('Cross-sells', 'dc-woocommerce-multi-vendor'); ?><span class="img_tip" data-desc="<?php _e('Cross-sells are products which you promote in the cart, based on the current product.', 'dc-woocommerce-multi-vendor'); ?>"></span></label>
-                <div class="col-md-6 col-sm-9">
-                    <select id="crosssell_ids" name="crosssell_ids[]" class="form-control regular-select pro_ele simple variable external grouped" multiple="multiple" style="width: 100%;">
-                        <?php
-                        if ($products_array)
-                            foreach ($products_array as $products_single) {
-                                echo '<option value="' . esc_attr($products_single->ID) . '"' . selected(in_array($products_single->ID, $crosssell_ids), true, false) . '>' . esc_html($products_single->post_title) . '</option>';
-                            }
-                        ?>
-                    </select>
-                </div>
-            </div>
-        </div>
-
-        <h3 class="pro_ele_head simple variable external grouped booking <?php if (apply_filters("vendor_product_advanced_hide",false)) echo ' vendor_hidden'; ?>"><?php _e('Advanced', 'dc-woocommerce-multi-vendor'); ?></h3>
-        <div class="pro_ele_block simple variable external grouped booking <?php if (apply_filters("vendor_product_advanced_hide",false)) echo ' vendor_hidden'; ?>">
-
-            <?php
-            $WCMp->wcmp_frontend_fields->wcmp_generate_form_field(apply_filters('wcmp_fpm_manage_fields_advanced', array(
-                "enable_reviews" => array('label' => __('Enable Reviews', 'dc-woocommerce-multi-vendor'), 'type' => 'checkbox', 'class' => 'regular-checkbox pro_ele simple variable external grouped', 'value' => 'enable', 'label_class' => 'pro_title checkbox_title grouped', 'dfvalue' => $enable_reviews),
-                "menu_order" => array('label' => __('Menu Order', 'dc-woocommerce-multi-vendor'), 'type' => 'number', 'class' => 'regular-text pro_ele simple variable external grouped', 'label_class' => 'pro_title grouped', 'value' => $menu_order, 'hints' => __('Custom ordering position.', 'dc-woocommerce-multi-vendor')),
-                "purchase_note" => array('label' => __('Purchase Note', 'dc-woocommerce-multi-vendor'), 'type' => 'textarea', 'class' => 'regular-textarea pro_ele simple variable grouped', 'label_class' => 'pro_ele pro_title simple variable grouped', 'value' => $purchase_note, 'hints' => __('Enter an optional note to send the customer after purchase.', 'dc-woocommerce-multi-vendor'))
-                            ), $product_id));
-            ?>
-
-        </div>
-
-        <?php if (WC_Dependencies_Product_Vendor::fpm_yoast_plugin_active_check()) { ?>
-            <h3 class="pro_ele_head pro_ele_yoast_head simple variable external grouped booking"><?php _e('Yoast SEO', 'dc-woocommerce-multi-vendor'); ?></h3>
-            <div class="pro_ele_block pro_ele_yoast_block simple variable external grouped booking">
-
-                <?php
-                $WCMp->wcmp_frontend_fields->wcmp_generate_form_field(apply_filters('product_manage_fields_yoast', array(
-                    "yoast_wpseo_focuskw_text_input" => array('label' => __('Enter a focus keyword', 'dc-woocommerce-multi-vendor'), 'type' => 'text', 'class' => 'regular-text pro_ele simple variable external grouped booking', 'label_class' => 'pro_title pro_ele simple variable external grouped booking', 'value' => $yoast_wpseo_focuskw_text_input, 'hints' => __('It should appear in title and first paragraph of the copy.', 'dc-woocommerce-multi-vendor')),
-                    "yoast_wpseo_metadesc" => array('label' => __('Meta description', 'dc-woocommerce-multi-vendor'), 'type' => 'textarea', 'class' => 'regular-textarea pro_ele simple variable external grouped booking', 'label_class' => 'pro_ele pro_title simple variable external grouped booking', 'value' => $yoast_wpseo_metadesc, 'hints' => __('It should not be more than 156 characters.', 'dc-woocommerce-multi-vendor'))
-                )));
-                ?>
-
-            </div>
-        <?php } ?>
-
-        <?php if (WC_Dependencies_Product_Vendor::fpm_wc_tabs_lite_plugin_active_check()) { ?>
-            <h3 class="pro_ele_head simple variable external grouped booking"><?php _e('Custom Tabs', 'dc-woocommerce-multi-vendor'); ?></h3>
-            <div class="pro_ele_block simple variable external grouped booking">
-
-                <?php
-                $WCMp->wcmp_frontend_fields->wcmp_generate_form_field(apply_filters('product_manage_fields_wc_tabs_lite', array(
-                    "product_tabs" => array('label' => __('Tabs', 'dc-woocommerce-multi-vendor'), 'type' => 'multiinput', 'class' => 'pro_ele simple variable external grouped booking', 'label_class' => 'pro_title', 'value' => $product_tabs, 'options' => array(
-                            "title" => array('label' => __('Title', 'dc-woocommerce-multi-vendor'), 'type' => 'text', 'class' => 'regular-text pro_ele simple variable external grouped booking', 'label_class' => 'pro_title pro_ele simple variable external grouped booking', 'hints' => __('Required for tab to be visible', 'dc-woocommerce-multi-vendor')),
-                            "content" => array('label' => __('Content', 'dc-woocommerce-multi-vendor'), 'type' => 'textarea', 'class' => 'regular-textarea pro_ele simple variable external grouped booking', 'label_class' => 'pro_ele pro_title simple variable external grouped booking', 'placeholder' => __('HTML or Text to display ...', 'dc-woocommerce-multi-vendor'))
-                        ))
-                )));
-                ?>
-            </div>
-        <?php } ?>
-
-        <?php if (WC_Dependencies_Product_Vendor::fpm_wc_product_fees_plugin_active_check()) { ?>
-            <h3 class="pro_ele_head simple variable external grouped booking"><?php _e('Product Fees', 'dc-woocommerce-multi-vendor'); ?></h3>
-            <div class="pro_ele_block simple variable external grouped booking">
-
-                <?php
-                $WCMp->wcmp_frontend_fields->wcmp_generate_form_field(apply_filters('product_manage_fields_yoast', array(
-                    "product-fee-name" => array('label' => __('Fee Name', 'dc-woocommerce-multi-vendor'), 'type' => 'text', 'class' => 'regular-text pro_ele simple variable external grouped booking', 'label_class' => 'pro_title pro_ele simple variable external grouped booking', 'value' => $product_fee_name, 'hints' => __('This will be shown at the checkout description the added fee.', 'dc-woocommerce-multi-vendor')),
-                    "product-fee-amount" => array('label' => __('Fee Amount', 'dc-woocommerce-multi-vendor') . '(' . get_woocommerce_currency_symbol() . ')', 'type' => 'text', 'class' => 'regular-text pro_ele simple variable external grouped booking', 'label_class' => 'pro_ele pro_title simple variable external grouped booking', 'value' => $product_fee_amount, 'hints' => __('Enter a monetary decimal without any currency symbols or thousand separator. This field also accepts percentages.', 'dc-woocommerce-multi-vendor')),
-                    "product-fee-multiplier" => array('label' => __('Multiple Fee by Quantity', 'dc-woocommerce-multi-vendor'), 'type' => 'checkbox', 'class' => 'regular-checkbox pro_ele simple variable external grouped booking', 'value' => 'yes', 'label_class' => 'pro_title checkbox_title simple variable external grouped booking', 'hints' => __('Multiply the fee by the quantity of this product that is added to the cart.', 'dc-woocommerce-multi-vendor'), 'dfvalue' => $product_fee_multiplier),
-                )));
-                ?>
-
-            </div>
-        <?php } ?>
-
-        <?php if (WC_Dependencies_Product_Vendor::fpm_wc_bulk_discount_plugin_active_check()) { ?>
-            <h3 class="pro_ele_head simple variable external grouped booking"><?php _e('Bulk Discount', 'dc-woocommerce-multi-vendor'); ?></h3>
-            <div class="pro_ele_block simple variable external grouped booking">
-
-                <?php
-                $WCMp->wcmp_frontend_fields->wcmp_generate_form_field(apply_filters('product_manage_fields_yoast', array(
-                    "_bulkdiscount_enabled" => array('label' => __('Bulk Discount enabled', 'dc-woocommerce-multi-vendor'), 'type' => 'checkbox', 'class' => 'regular-checkbox pro_ele simple variable external grouped booking', 'value' => 'yes', 'label_class' => 'pro_title checkbox_title simple variable external grouped booking', 'dfvalue' => $_bulkdiscount_enabled),
-                    "_bulkdiscount_text_info" => array('label' => __('Bulk discount special offer text in product description', 'dc-woocommerce-multi-vendor'), 'type' => 'textarea', 'class' => 'regular-textarea pro_ele simple variable external grouped booking', 'label_class' => 'pro_ele pro_title simple variable external grouped booking', 'value' => $_bulkdiscount_text_info),
-                    "_bulkdiscounts" => array('label' => __('Discount Rules', 'dc-woocommerce-multi-vendor'), 'type' => 'multiinput', 'custom_attributes' => array('limit' => 5), 'class' => 'regular-text pro_ele simple variable external grouped booking', 'label_class' => 'pro_title', 'value' => $_bulkdiscounts, 'options' => array(
-                            "quantity" => array('label' => __('Quantity (min.)', 'dc-woocommerce-multi-vendor'), 'type' => 'number', 'class' => 'regular-text pro_ele simple variable external grouped booking', 'label_class' => 'pro_title'),
-                            "discount" => array('label' => __('Discount (%)', 'dc-woocommerce-multi-vendor'), 'type' => 'number', 'class' => 'regular-text pro_ele simple variable external grouped booking', 'label_class' => 'pro_title'),
-                        ))
-                )));
-                ?>
-
-            </div>
-        <?php } ?>
-
-        <?php if (WC_Dependencies_Product_Vendor::fpm_mappress_plugin_active_check()) { ?>
-
-        <?php } ?>
-
-        <?php if (WC_Dependencies_Product_Vendor::fpm_toolset_plugin_active_check()) { ?>
-            <?php
-            include_once( WPCF_EMBEDDED_ABSPATH . '/includes/fields-post.php' );
-            $product_post = get_post();
-            $product_post->post_type = 'product';
-            $field_groups = wpcf_admin_post_get_post_groups_fields($product_post);
-
-            if (!empty($field_groups)) {
-                foreach ($field_groups as $field_group_index => $field_group) {
-                    //If Access plugin activated
-                    if (function_exists('wpcf_access_register_caps')) {
-                        //If user can't view own profile fields
-                        if (!current_user_can('view_fields_in_edit_page_' . $field_group['slug'])) {
-                            continue;
-                        }
-                        //If user can modify current group in own profile
-                        if (!current_user_can('modify_fields_in_edit_page_' . $field_group['slug'])) {
-                            continue;
-                        }
-                    }
-                    if (isset($group['__show_meta_box']) && $group['__show_meta_box'] == false)
-                        continue;
-                    $field_group_load = Types_Field_Group_Post_Factory::load($field_group['slug']);
-                    if (null === $field_group_load)
-                        continue;
-
-                    // WooCommerce Filter Views discard
-                    if ($field_group['slug'] == 'woocommerce-views-filter-fields')
-                        continue;
-
-                    if (!empty($field_group['fields'])) {
-                        ?>
-                        <h3 class="pro_ele_head simple variable external grouped booking"><?php echo $field_group['name']; ?></h3>
-                        <div class="pro_ele_block simple variable external grouped booking">
-
-                            <?php
-                            if (!empty($field_group['fields'])) {
-                                foreach ($field_group['fields'] as $field_group_field) {
-                                    $field_value = '';
-                                    if ($product_id)
-                                        $field_value = get_post_meta($product_id, $field_group_field['meta_key'], true);
-                                    switch ($field_group_field['type']) {
-                                        case 'url':
-                                        case 'phone':
-                                        case 'textfield':
-                                        case 'google_address':
-                                            $WCMp->wcmp_frontend_fields->wcmp_generate_form_field(array($field_group_field['meta_key'] => array('label' => $field_group_field['name'], 'desc' => $field_group_field['description'], 'name' => 'wpcf[' . $field_group_field['meta_key'] . ']', 'type' => 'text', 'class' => 'regular-text pro_ele simple variable external grouped booking', 'label_class' => 'pro_title', 'value' => $field_value)));
-                                            break;
-
-                                        case 'numeric':
-                                            $WCMp->wcmp_frontend_fields->wcmp_generate_form_field(array($field_group_field['meta_key'] => array('label' => $field_group_field['name'], 'desc' => $field_group_field['description'], 'name' => 'wpcf[' . $field_group_field['meta_key'] . ']', 'type' => 'number', 'class' => 'regular-text pro_ele simple variable external grouped booking', 'label_class' => 'pro_title', 'value' => $field_value)));
-                                            break;
-
-                                        case 'wysiwyg':
-                                        case 'textarea':
-                                            $WCMp->wcmp_frontend_fields->wcmp_generate_form_field(array($field_group_field['meta_key'] => array('label' => $field_group_field['name'], 'desc' => $field_group_field['description'], 'name' => 'wpcf[' . $field_group_field['meta_key'] . ']', 'type' => 'textarea', 'class' => 'regular-textarea pro_ele simple variable external grouped booking', 'label_class' => 'pro_title', 'value' => $field_value)));
-                                            break;
-
-                                        case 'date':
-                                            $WCMp->wcmp_frontend_fields->wcmp_generate_form_field(array($field_group_field['meta_key'] => array('label' => $field_group_field['name'], 'desc' => $field_group_field['description'], 'name' => 'wpcf[' . $field_group_field['meta_key'] . ']', 'type' => 'text', 'placeholder' => __('YYYY-MM-DD', 'dc-woocommerce-multi-vendor'), 'class' => 'regular-text pro_ele dc_datepicker simple variable external grouped booking', 'label_class' => 'pro_title', 'value' => $field_value)));
-                                            break;
-
-                                        case 'timepicker':
-                                            $WCMp->wcmp_frontend_fields->wcmp_generate_form_field(array($field_group_field['meta_key'] => array('label' => $field_group_field['name'], 'desc' => $field_group_field['description'], 'name' => 'wpcf[' . $field_group_field['meta_key'] . ']', 'type' => 'time', 'class' => 'regular-text pro_ele simple variable external grouped booking', 'label_class' => 'pro_title', 'value' => $field_value)));
-                                            break;
-
-                                        case 'checkbox':
-                                            $WCMp->wcmp_frontend_fields->wcmp_generate_form_field(array($field_group_field['meta_key'] => array('label' => $field_group_field['name'], 'desc' => $field_group_field['description'], 'name' => 'wpcf[' . $field_group_field['meta_key'] . ']', 'type' => 'checkbox', 'class' => 'regular-checkbox pro_ele simple variable external grouped booking', 'label_class' => 'pro_title checkbox_title', 'value' => $field_group_field['data']['set_value'], 'dfvalue' => $field_value)));
-                                            break;
-
-                                        case 'radio':
-                                            $radio_opt_vals = array();
-                                            if (!empty($field_group_field['data']['options'])) {
-                                                foreach ($field_group_field['data']['options'] as $radio_option) {
-                                                    if (!empty($radio_option) && isset($radio_option['value']) && isset($radio_option['title'])) {
-                                                        $radio_opt_vals[$radio_option['value']] = $radio_option['title'];
-                                                    }
-                                                }
-                                            }
-                                            $WCMp->wcmp_frontend_fields->wcmp_generate_form_field(array($field_group_field['meta_key'] => array('label' => $field_group_field['name'], 'desc' => $field_group_field['description'], 'name' => 'wpcf[' . $field_group_field['meta_key'] . ']', 'type' => 'radio', 'class' => 'regular-select pro_ele', 'label_class' => 'pro_title', 'options' => $radio_opt_vals, 'value' => $field_value)));
-                                            break;
-
-                                        case 'select':
-                                            $select_opt_vals = array('' => __('--- not set ---', 'dc-woocommerce-multi-vendor'));
-                                            if (!empty($field_group_field['data']['options'])) {
-                                                foreach ($field_group_field['data']['options'] as $select_option) {
-                                                    if (!empty($select_option) && isset($select_option['value']) && isset($select_option['title'])) {
-                                                        $select_opt_vals[$select_option['value']] = $select_option['title'];
-                                                    }
-                                                }
-                                            }
-                                            $WCMp->wcmp_frontend_fields->wcmp_generate_form_field(array($field_group_field['meta_key'] => array('label' => $field_group_field['name'], 'desc' => $field_group_field['description'], 'name' => 'wpcf[' . $field_group_field['meta_key'] . ']', 'type' => 'select', 'class' => 'regular-select pro_ele simple variable external grouped booking', 'label_class' => 'pro_title', 'options' => $select_opt_vals, 'value' => $field_value)));
-                                            break;
-
-                                        case 'image':
-                                            $WCMp->wcmp_frontend_fields->wcmp_generate_form_field(array($field_group_field['meta_key'] => array('label' => $field_group_field['name'], 'desc' => $field_group_field['description'], 'name' => 'wpcf[' . $field_group_field['meta_key'] . ']', 'type' => 'upload', 'class' => 'pro_ele simple variable external grouped booking', 'label_class' => 'pro_title', 'value' => $field_value)));
-                                            break;
-
-                                        case 'file':
-                                        case 'audio':
-                                        case 'video':
-                                            $WCMp->wcmp_frontend_fields->wcmp_generate_form_field(array($field_group_field['meta_key'] => array('label' => $field_group_field['name'], 'desc' => $field_group_field['description'], 'name' => 'wpcf[' . $field_group_field['meta_key'] . ']', 'type' => 'upload', 'mime' => 'Uploads', 'class' => 'pro_ele simple variable external grouped booking', 'label_class' => 'pro_title', 'value' => $field_value)));
-                                            break;
-                                    }
-                                }
-                            }
-                            ?>
-
-                        </div>
-                        <?php
-                    }
-                }
-            }
-            ?>
-        <?php } ?>
+       
+            
+        
 
         <?php do_action('end_wcmp_fpm_products_manage', $product_id); ?>
 

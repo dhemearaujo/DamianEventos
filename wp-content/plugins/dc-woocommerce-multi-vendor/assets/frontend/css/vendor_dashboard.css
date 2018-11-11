@@ -1,44 +1,44 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
-.wcmp-color-scheme-outer_space_blue .navbar .topbar-left,
+.wcmp-color-scheme-outer_space_blue .navbar .topbar-left ,
 .wcmp-color-scheme-outer_space_blue .navbar-default .navbar-toggle .icon-bar,
 .wcmp-color-scheme-outer_space_blue .staticstics-panel-wrap .panel-body .compare-stat-info:after,
 .wcmp-color-scheme-outer_space_blue .progress-bar,
 .wcmp-color-scheme-outer_space_blue table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child:before,
 .wcmp-color-scheme-outer_space_blue table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:before,
 .wcmp-color-scheme-outer_space_blue input[type=radio]:checked:before {
-  background: #3f85b9; }
+  background: #812064; }
 .wcmp-color-scheme-outer_space_blue .navbar-default.sidebar ul li a.active,
 .wcmp-color-scheme-outer_space_blue .navbar-default.sidebar a:hover,
 .wcmp-color-scheme-outer_space_blue .navbar-default.sidebar a:focus {
-  background-color: #202528;
-  color: #fff; }
+  background-color: #812064;
+  color: #812064; }
 .wcmp-color-scheme-outer_space_blue .sidebar {
-  background: #333b3d;
-  color: #bcb7b2; }
+  background: #812064;
+  color: #812064; }
   .wcmp-color-scheme-outer_space_blue .sidebar a.active i {
-    color: #e9e4e0; }
+    color: #812064; }
 .wcmp-color-scheme-outer_space_blue .vendor-cover-wrap .cover-pic-button button,
 .wcmp-color-scheme-outer_space_blue .vendor-cover-wrap .vendor-profile-pic-wraper .profile-pic-btn,
 .wcmp-color-scheme-outer_space_blue .woocommerce-exporter-wrapper .button, .wcmp-color-scheme-outer_space_blue .woocommerce-importer-wrapper .button, .wcmp-color-scheme-outer_space_blue .woocommerce-progress-form-wrapper .button {
-  color: #fff;
-  background-color: #3f85b9;
-  border-color: #3f85b9; }
+  color: #812064;
+  background-color: #812064;
+  border-color: #812064; }
 .wcmp-color-scheme-outer_space_blue .btn.btn-default {
-  color: #fff;
-  background-color: #316fa8;
-  border-color: #316fa8; }
+  color: #812064;
+  background-color: #812064;
+  border-color: #812064; }
 .wcmp-color-scheme-outer_space_blue .btn.btn-secondary {
-  color: #fff;
-  background-color: #333b3d;
-  border-color: #333b3d; }
+  color: #812064;
+  background-color: #812064;
+  border-color: #812064; }
 .wcmp-color-scheme-outer_space_blue .pagination li.active a {
-  background: #3f85b9;
-  border-color: #3f85b9; }
+  background: #812064;
+  border-color: #812064; }
 .wcmp-color-scheme-outer_space_blue a, .wcmp-color-scheme-outer_space_blue .media-body a {
-  color: #3f85b9; }
+  color: #812064; }
   .wcmp-color-scheme-outer_space_blue a:hover, .wcmp-color-scheme-outer_space_blue .media-body a:hover {
-    color: #333b3d; }
+    color: #812064; }
 .wcmp-color-scheme-outer_space_blue .sidebar.navbar-default ul a:hover i,
 .wcmp-color-scheme-outer_space_blue .sidebar.navbar-default ul a.active i,
 .wcmp-color-scheme-outer_space_blue .sidebar.navbar-default ul a:hover i,
@@ -53,29 +53,29 @@
 .wcmp-color-scheme-outer_space_blue .transaction-list,
 .wcmp-color-scheme-outer_space_blue .product-import.wcmp_displaybox2m h3, .wcmp-color-scheme-outer_space_blue .wcmp_displaybox2 h3,
 .wcmp-color-scheme-outer_space_blue input[type=checkbox]:checked:before {
-  color: #3f85b9; }
+  color: #812064; }
 .wcmp-color-scheme-outer_space_blue .wcmp_vendor_transaction_details {
-  color: #fff; }
+  color: #812064; }
   .wcmp-color-scheme-outer_space_blue .wcmp_vendor_transaction_details .panel-body {
-    background: #3f85b9 !important; }
+    background: #812064 !important; }
   .wcmp-color-scheme-outer_space_blue .wcmp_vendor_transaction_details .panel-footer {
-    background: #316fa8 !important; }
+    background: #812064 !important; }
     .wcmp-color-scheme-outer_space_blue .wcmp_vendor_transaction_details .panel-footer a {
-      color: #fff; }
+      color: #812064; }
 .wcmp-color-scheme-outer_space_blue .staticstics-panel-wrap .panel-body > h2,
 .wcmp-color-scheme-outer_space_blue .top-user-nav > li a.dropdown-toggle,
 .wcmp-color-scheme-outer_space_blue table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before, .wcmp-color-scheme-outer_space_blue table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child:before {
-  background: #333b3d; }
+  background: #812064; }
 .wcmp-color-scheme-outer_space_blue .woocommerce-exporter-wrapper .wc-progress-steps li.active, .wcmp-color-scheme-outer_space_blue .woocommerce-importer-wrapper .wc-progress-steps li.active, .wcmp-color-scheme-outer_space_blue .woocommerce-progress-form-wrapper .wc-progress-steps li.active {
-  border-color: #3f85b9 !important;
-  color: #3f85b9 !important; }
+  border-color: #812064 !important;
+  color: #812064 !important; }
   .wcmp-color-scheme-outer_space_blue .woocommerce-exporter-wrapper .wc-progress-steps li.active::before, .wcmp-color-scheme-outer_space_blue .woocommerce-importer-wrapper .wc-progress-steps li.active::before, .wcmp-color-scheme-outer_space_blue .woocommerce-progress-form-wrapper .wc-progress-steps li.active::before {
-    border-color: #3f85b9 !important; }
+    border-color: #812064 !important; }
 .wcmp-color-scheme-outer_space_blue .current-stat-report {
-  color: #316fa8;
-  background: rgba(49, 111, 168, 0.15); }
+  color: #812064;
+  background: rgba(129, 32, 100, 0.15); }
 .wcmp-color-scheme-outer_space_blue .product-tab-nav-holder ul li.active a, .wcmp-color-scheme-outer_space_blue .product-tab-nav-holder ul li.active a:hover, .wcmp-color-scheme-outer_space_blue .product-tab-nav-holder ul li.active a:focus {
-  border-top-color: #3f85b9; }
+  border-top-color: #812064; }
 
 .wcmp-color-scheme-green_lagoon .navbar .topbar-left,
 .wcmp-color-scheme-green_lagoon .navbar-default .navbar-toggle .icon-bar,
@@ -557,7 +557,7 @@ h4 {
 
 a {
   cursor: pointer;
-  color: #3f85b9; }
+  color: #812064; }
   a:hover, a:focus, a:active {
     text-decoration: none;
     box-shadow: none;
@@ -736,7 +736,7 @@ table.table-outer-border {
   padding-bottom: 0; }
 
 .breadcrumb {
-  background-color: transparent;
+  background-color: #812064;
   padding: 0;
   margin: 19px 0 0; }
   .breadcrumb a {
@@ -1025,8 +1025,8 @@ select.input-sm {
 
 .btn.btn-default, .btn.btn-secondary {
   color: #fff;
-  background-color: #3f85b9;
-  border-color: #3f85b9;
+  background-color: #812064;
+  border-color: #812064;
   padding: 6px 27px;
   transition: all 0.4s;
   border-radius: 1px;
@@ -1101,7 +1101,7 @@ textarea {
 
 blockquote {
   background: #fff;
-  border-left: 5px solid #3f85b9; }
+  border-left: 5px solid #812064; }
 
 .pagination {
   margin: 13px 0 13px 20px; }
@@ -1114,7 +1114,7 @@ blockquote {
       border-radius: 0 !important;
       border: 1px solid #d3dbe2; }
     .pagination li.active a {
-      background: #3f85b9; }
+      background: #812064; }
 
 .star-rating {
   text-align: left;
@@ -1134,7 +1134,7 @@ blockquote {
     top: 0;
     left: 0;
     position: absolute;
-    color: #3f85b9; }
+    color: #812064; }
   .star-rating span {
     overflow: hidden;
     float: left;
@@ -1149,12 +1149,12 @@ blockquote {
       top: 0;
       position: absolute;
       left: 0;
-      color: #3f85b9; }
+      color: #812064; }
 
 .media-body h4.media-heading {
-  color: #3f85b9; }
+  color: #812064; }
 .media-body a {
-  color: #3f85b9;
+  color: #812064;
   margin-top: 2px;
   display: inline-block; }
   .media-body a:hover {
@@ -1751,7 +1751,7 @@ body .media-frame select, body .wp-admin .media-frame select {
   .navbar .topbar-left {
     height: 100%;
     width: 284px;
-    background: #3f85b9; }
+    background: #812064; }
     @media screen and (max-width: 768px) {
       .navbar .topbar-left {
         width: 120px; } }
@@ -1778,7 +1778,7 @@ ul.nav .login-user {
     width: auto;
     color: #626c6f; }
   ul.nav .login-user a:hover i {
-    color: #3f85b9; }
+    color: #812064; }
   ul.nav .login-user .dropdown-menu.dropdown-user {
     width: 208px;
     padding: 0;
@@ -1791,7 +1791,7 @@ ul.nav .login-user {
       margin: 0; }
       ul.nav .login-user .dropdown-menu.dropdown-user a:hover {
         background-color: transparent;
-        color: #3f85b9; }
+        color: #812064; }
       ul.nav .login-user .dropdown-menu.dropdown-user a:focus {
         background: none; }
     ul.nav .login-user .dropdown-menu.dropdown-user i {
@@ -1837,7 +1837,7 @@ ul.nav .login-user {
       min-height: 50px;
       transition: all 0.3s; }
       .navbar-top-links li a:hover {
-        color: #3f85b9; }
+        color: #812064; }
       .navbar-top-links li a i {
         font-size: 26px;
         color: #737373;
@@ -1857,9 +1857,9 @@ ul.nav .login-user {
         display: inline-block;
         min-height: initial; }
         .navbar-top-links li.notification-link a:hover {
-          color: #3f85b9; }
+          color: #812064; }
           .navbar-top-links li.notification-link a:hover i {
-            color: #3f85b9; }
+            color: #812064; }
       .navbar-top-links li.notification-link .notification-blink {
         position: absolute;
         background-color: #e61818;
@@ -1987,7 +1987,7 @@ ul.nav .login-user {
         font-size: 18px;
         margin-right: 5px; } }
   .sidebar.navbar-default ul a:hover i, .sidebar.navbar-default ul a.active i {
-    color: #3f85b9; }
+    color: #812064; }
   .sidebar.navbar-default ul li a i + span {
     vertical-align: middle; }
   .sidebar .mCustomScrollbar {
@@ -2125,7 +2125,7 @@ ul.nav .login-user {
     width: 25px;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
-    background-color: #3f85b9;
+    background-color: #812064;
     margin-top: 7px; }
     .navbar-default .navbar-toggle .icon-bar:first-child {
       margin: 0; }
@@ -2295,7 +2295,7 @@ body.admin-bar .wcmp-action-container {
 .wcmp_vendor_transaction_details {
   color: #fff; }
   .wcmp_vendor_transaction_details .panel-body {
-    background: #3f85b9 !important;
+    background: #812064 !important;
     color: inherit;
     border: 0 !important; }
   .wcmp_vendor_transaction_details .panel-footer {
@@ -2406,7 +2406,7 @@ td:focus {
   font-size: 15px;
   margin: 0 0 8px; }
   .staticstics-panel-wrap .panel-body .stat-detail-info i {
-    color: #3f85b9;
+    color: #812064;
     font-size: 22px;
     vertical-align: middle; }
 .staticstics-panel-wrap .panel-body .compare-stat-info {
@@ -2420,7 +2420,7 @@ td:focus {
     position: absolute;
     content: '';
     width: 6px;
-    background: #3f85b9;
+    background: #812064;
     left: -1px;
     top: -1px;
     bottom: -1px; }
@@ -2903,7 +2903,7 @@ table th .checkbox-holder .wcmp-font {
       bottom: 0;
       right: 0;
       width: 100%;
-      background: #3f85b9;
+      background: #812064;
       padding: 5px;
       color: #fff;
       transition: all 0.3s;
@@ -2923,7 +2923,7 @@ table th .checkbox-holder .wcmp-font {
     right: 125px; }
     .vendor-cover-wrap .cover-pic-button button {
       border: none;
-      background: #3f85b9;
+      background: #812064;
       padding: 9px 15px;
       color: #fff;
       transition: all 0.3s; }
@@ -3213,11 +3213,11 @@ table.shipping_table td {
       display: inline-block; }
 
 .woocommerce-exporter-wrapper .wc-progress-steps li.active, .woocommerce-importer-wrapper .wc-progress-steps li.active, .woocommerce-progress-form-wrapper .wc-progress-steps li.active {
-  border-color: #3f85b9 !important;
-  color: #3f85b9 !important; }
+  border-color: #812064 !important;
+  color: #812064 !important; }
 
 .woocommerce-exporter-wrapper .wc-progress-steps li.active::before, .woocommerce-importer-wrapper .wc-progress-steps li.active::before, .woocommerce-progress-form-wrapper .wc-progress-steps li.active::before {
-  border-color: #3f85b9 !important; }
+  border-color: #812064 !important; }
 
 body .woocommerce-exporter-wrapper .button, body .woocommerce-importer-wrapper .button, body .woocommerce-progress-form-wrapper .button {
   box-shadow: none !important;
@@ -3228,7 +3228,7 @@ body .woocommerce-exporter-wrapper .button, body .woocommerce-importer-wrapper .
   border: 1px solid !important; }
 
 .woocommerce-exporter-wrapper .button:active, .woocommerce-exporter-wrapper .button:focus, .woocommerce-exporter-wrapper .button:hover, .woocommerce-importer-wrapper .button:active, .woocommerce-importer-wrapper .button:focus, .woocommerce-importer-wrapper .button:hover, .woocommerce-progress-form-wrapper .button:active, .woocommerce-progress-form-wrapper .button:focus, .woocommerce-progress-form-wrapper .button:hover {
-  background: #3f85b9 !important;
+  background: #812064 !important;
   box-shadow: none !important;
   color: #fff !important; }
 
@@ -3353,7 +3353,7 @@ body .wc_bookings_calendar_form .calendar_days {
     .all-booking .wcmp_tab.ui-tabs .wcmp_booking_tbl tbody strong, .all-booking .wcmp_tab.ui-tabs .wcmp_booking_tbl tbody .wcmp_table_action {
       color: #333b3d; }
       .all-booking .wcmp_tab.ui-tabs .wcmp_booking_tbl tbody strong:hover, .all-booking .wcmp_tab.ui-tabs .wcmp_booking_tbl tbody .wcmp_table_action:hover {
-        color: #3f85b9; }
+        color: #812064; }
 
 .booking-details .booking-customer-details tbody {
   border: 1px solid #ddd; }
@@ -3560,8 +3560,8 @@ body .mcs-horizontal-example .mCSB_dragger_bar {
         .product-tab-nav-holder ul li a:hover {
           border-color: transparent; }
       .product-tab-nav-holder ul li.active a, .product-tab-nav-holder ul li.active a:hover, .product-tab-nav-holder ul li.active a:focus {
-        background: #3f85b9;
-        border-color: #3f85b9;
+        background: #812064;
+        border-color: #812064;
         color: #fff;
         box-shadow: inset 0px -3px 3px rgba(0, 0, 0, 0.1); }
 
@@ -3636,7 +3636,7 @@ label.col-md-12.control-label {
     width: calc(100% - 155px); }
   .product-import.wcmp_displaybox2m h3, .wcmp_displaybox2 h3 {
     margin-bottom: 0;
-    color: #3f85b9;
+    color: #812064;
     font-size: 16px;
     display: inline-block;
     vertical-align: middle;
@@ -3679,7 +3679,7 @@ label.col-md-12.control-label {
   width: 100%;
   text-align: center; }
   .wcmp_displaybox3 h3 {
-    color: #3f85b9;
+    color: #812064;
     font-size: 27px;
     line-height: 30px;
     margin: 0; }
@@ -3759,7 +3759,7 @@ form.stat-date-range .panel-heading .form-group {
   .multi_input_block_manupulate.button-secondary {
     margin-left: 5px !important; }
   .multi_input_block_manupulate:hover {
-    background: #3f85b9;
+    background: #812064;
     color: #fff; }
 
 .pro_ele_hide, .pro_head_hide, .pro_block_hide, .non_stock_ele_hide, .non_virtual_ele_hide, .downloadable_ele_hide, .vendor_hidden {

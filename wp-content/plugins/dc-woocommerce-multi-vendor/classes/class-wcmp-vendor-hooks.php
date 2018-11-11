@@ -87,7 +87,7 @@ class WCMp_Vendor_Hooks {
                         , 'nav_icon'    => 'wcmp-font ico-policies-icon'
                     ),
                     'vendor-billing'  => array(
-                        'label'       => __( 'Conta PayPal', 'dc-woocommerce-multi-vendor' )
+                        'label'       => __( 'Recebimento de Comissão', 'dc-woocommerce-multi-vendor' )
                         , 'url'         => wcmp_get_vendor_dashboard_endpoint_url( get_wcmp_vendor_settings( 'wcmp_vendor_billing_endpoint', 'vendor', 'general', 'vendor-billing' ) )
                         , 'capability'  => apply_filters( 'wcmp_vendor_dashboard_menu_vendor_billing_capability', true )
                         , 'position'    => 30
