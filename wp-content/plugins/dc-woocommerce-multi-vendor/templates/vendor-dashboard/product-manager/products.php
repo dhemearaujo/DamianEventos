@@ -101,7 +101,7 @@ foreach ($terms as $term) {
                 "emptyTable": "<?php echo isset($table_init['emptyTable']) ? trim($table_init['emptyTable']) : __('No products found!', 'dc-woocommerce-multi-vendor'); ?>",
                 "processing": "<?php echo isset($table_init['processing']) ? trim($table_init['processing']) : __('Processing...', 'dc-woocommerce-multi-vendor'); ?>",
                 "info": "<?php echo isset($table_init['info']) ? trim($table_init['info']) : __('Showing _START_ to _END_ of _TOTAL_ products', 'dc-woocommerce-multi-vendor'); ?>",
-                "infoEmpty": "<?php echo isset($table_init['infoEmpty']) ? trim($table_init['infoEmpty']) : __('Showing 0 to 0 of 0 products', 'dc-woocommerce-multi-vendor'); ?>",
+                "infoEmpty": "<?php echo isset($table_init['infoEmpty']) ? trim($table_init['infoEmpty']) : __('Showing 0 to 0 of 0 tickets', 'dc-woocommerce-multi-vendor'); ?>",
                 "lengthMenu": "<?php echo isset($table_init['lengthMenu']) ? trim($table_init['lengthMenu']) : __('Number of rows _MENU_', 'dc-woocommerce-multi-vendor'); ?>",
                 "zeroRecords": "<?php echo isset($table_init['zeroRecords']) ? trim($table_init['zeroRecords']) : __('No matching products found', 'dc-woocommerce-multi-vendor'); ?>",
                 "search": "<?php echo isset($table_init['search']) ? trim($table_init['search']) : __('Search:', 'dc-woocommerce-multi-vendor'); ?>",

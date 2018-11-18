@@ -145,14 +145,6 @@ if (!empty($pro_id)) {
             $download_expiry = get_post_meta($product_id, '_download_expiry', true);
         }
 
-        if ($is_downloadable == 'disabled') {
-            $downloadable_files = get_post_meta($product_id, '_downloadable_files', true);
-            if (!$downloadable_files)
-                $downloadable_files = array();
-            $download_limit = get_post_meta($product_id, '_download_limit', true);
-            $download_expiry = get_post_meta($product_id, '_download_expiry', true);
-        }
-
         // Product Images
         $featured_img = ($product->get_image_id()) ? $product->get_image_id() : '';
         if ($featured_img)
@@ -400,7 +392,7 @@ $attribute_taxonomies = wc_get_attribute_taxonomies();
             $custom_product_type_attribute = array();
             $disable_other_product_type = apply_filters('wcmp_disable_other_product_type', true);
             if($disable_other_product_type){
-                $custom_product_type_attribute = array('enable' => 'enable');
+                $custom_product_type_attribute = array('disabled' => 'disabled');
             }
             if (!empty($product_types)) {
                 if (!$product_id) {
@@ -436,8 +428,8 @@ $attribute_taxonomies = wc_get_attribute_taxonomies();
         </div>
         <?php if($disable_other_product_type) : ?>
             <div class="add-product-backend">
-                <p><?php _e('Para ingressos com mais de um tipo (ex: inteira, meia-entrada e etc.), ir para ', 'dc-woocommerce-multi-vendor'); ?><a href="<?php echo admin_url('post-new.php?post_type=product'); ?>"><?php _e('Painel Secundário', 'dc-woocommerce-multi-vendor'); ?> <i class="wcmp-font ico-wp-backend-icon"></i></a></p>
-            </div>
+                <!--<p><?php _e('Para ingressos com mais de um tipo (ex: inteira, meia-entrada e etc.), ir para ', 'dc-woocommerce-multi-vendor'); ?><a href="<?php echo admin_url('post-new.php?post_type=product'); ?>"><?php _e('Painel Secundário', 'dc-woocommerce-multi-vendor'); ?> <i class="wcmp-font ico-wp-backend-icon"></i></a></p>
+            </div>-->
         <?php endif; ?>
 
         <div id="frontend_product_manager_accordion">
