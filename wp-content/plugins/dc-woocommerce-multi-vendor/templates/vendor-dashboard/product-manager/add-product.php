@@ -488,7 +488,7 @@ $attribute_taxonomies = wc_get_attribute_taxonomies();
                 ?>
 
             </div>
-            <h3 class="pro_ele_head simple variable external grouped"><?php _e('Category & Tags', 'dc-woocommerce-multi-vendor'); ?></h3>
+            <h3 class="pro_ele_head simple variable external grouped"><?php _e('Categorias e Tags', 'dc-woocommerce-multi-vendor'); ?></h3>
             <div class="pro_ele_block simple variable external grouped">
                 <div class="form-group">
                     <label class="control-label form-label col-sm-3"><?php _e('Categories', 'dc-woocommerce-multi-vendor'); ?></label>

@@ -65,7 +65,7 @@ class WCMp_Vendor_Hooks {
                 , 'nav_icon'    => 'wcmp-font ico-dashboard-icon'
             ),
             'store-settings'       => array(
-                'label'       => __( 'Configurações do Vendedor', 'dc-woocommerce-multi-vendor' )
+                'label'       => __( 'Configurações', 'dc-woocommerce-multi-vendor' )
                 , 'url'         => '#'
                 , 'capability'  => apply_filters( 'wcmp_vendor_dashboard_menu_store_settings_capability', true )
                 , 'position'    => 10
@@ -133,7 +133,7 @@ class WCMp_Vendor_Hooks {
                 , 'nav_icon'    => 'wcmp-font ico-product-manager-icon'
             ),
             'vendor-promte'        => array(
-                'label'       => __( 'Coupons', 'dc-woocommerce-multi-vendor' )
+                'label'       => __( 'Cupom de Desconto', 'dc-woocommerce-multi-vendor' )
                 , 'url'         => '#'
                 , 'capability'  => apply_filters( 'wcmp_vendor_dashboard_menu_vendor_promte_capability', 'edit_shop_coupons' )
                 , 'position'    => 30
