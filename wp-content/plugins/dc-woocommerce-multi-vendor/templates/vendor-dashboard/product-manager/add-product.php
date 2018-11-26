@@ -428,8 +428,8 @@ $attribute_taxonomies = wc_get_attribute_taxonomies();
         </div>
         <?php if($disable_other_product_type) : ?>
             <div class="add-product-backend">
-                <!--<p><?php _e('Para ingressos com mais de um tipo (ex: inteira, meia-entrada e etc.), ir para ', 'dc-woocommerce-multi-vendor'); ?><a href="<?php echo admin_url('post-new.php?post_type=product'); ?>"><?php _e('Painel Secundário', 'dc-woocommerce-multi-vendor'); ?> <i class="wcmp-font ico-wp-backend-icon"></i></a></p>
-            </div>-->
+                <p><?php _e('Recomendamos a utilização de flyers de divulgação com resolução de 800x800 pixels para melhor aproveitamento de qualidade de imagem na plataforma.'); ?></p>
+            </div>
         <?php endif; ?>
 
         <div id="frontend_product_manager_accordion">
