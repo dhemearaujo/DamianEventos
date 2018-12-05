@@ -10,9 +10,9 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 <?php if ( count( $ps_search_list ) > 0 ) { ?>
 	<p class="rs_result_heading">
-		<?php wc_ps_ict_t_e( 'Viewing all', __('Viewing all', 'woocommerce-predictive-search' ) ); ?> 
+		<?php wc_ps_ict_t_e( 'Visualizando todos', __('Visualizando todos', 'woocommerce-predictive-search' ) ); ?> 
 		<strong><span class="ps_heading_search_in_name"><?php echo $items_search_default[$ps_current_search_in]['name']; ?></span></strong> 
-		<?php wc_ps_ict_t_e( 'Search Result Text', __('search results for your search query', 'woocommerce-predictive-search' ) ); ?> 
+		<?php wc_ps_ict_t_e( 'Texto do Resultado da Pesquisa', __('resultados para sua consulta de pesquisa', 'woocommerce-predictive-search' ) ); ?> 
 		<strong><?php echo $search_keyword; ?></strong>
 	</p>
 <?php } ?>

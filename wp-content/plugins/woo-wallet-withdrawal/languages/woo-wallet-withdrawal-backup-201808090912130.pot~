@@ -1,0 +1,300 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Wallet Withdrawal\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-12 11:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: includes/class-woo-wallet-withdrawal-license.php:163
+#, php-format
+msgid ""
+"%sClick here%s to activate the license key to receive updates and support."
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-post-type.php:88
+msgid "Actions"
+msgstr ""
+
+#: templates/woo-wallet-withdrawal-settings.php:39
+msgid "Address of your bank"
+msgstr ""
+
+#: templates/woo-wallet-withdrawal-details.php:23
+#: includes/class-woo-wallet-withdrawal-post-type.php:83
+msgid "Amount"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-admin.php:80
+msgid "API License email"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-admin.php:73
+msgid "API License Key"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-post-type.php:117
+#: includes/class-woo-wallet-withdrawal-post-type.php:119
+#: includes/class-woo-wallet-withdrawal-post-type.php:137
+msgid "Approve"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-post-type.php:62
+#, php-format
+msgid "Approved <span class=\"count\">(%s)</span>"
+msgid_plural "Approved <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/woo-wallet-withdrawal.php:24
+msgid "Approved Requests"
+msgstr ""
+
+#: includes/gateways/class-woo-wallet-gateway-bacs.php:18
+msgid "BACS"
+msgstr ""
+
+#: templates/woo-wallet-withdrawal-settings.php:28
+msgid "Bank transfer"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-post-type.php:70
+#, php-format
+msgid "Cancelled <span class=\"count\">(%s)</span>"
+msgid_plural "Cancelled <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/woo-wallet-withdrawal.php:25
+msgid "Cancelled Requests"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-license.php:202
+msgid "Connection failed to the License Key API server. Try again later."
+msgstr ""
+
+#: templates/woo-wallet-withdrawal.php:20
+msgid "Current wallet balance: "
+msgstr ""
+
+#: templates/woo-wallet-withdrawal-details.php:26
+#: includes/class-woo-wallet-withdrawal-post-type.php:87
+msgid "Date"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-post-type.php:115
+#: includes/class-woo-wallet-withdrawal-post-type.php:117
+#: includes/class-woo-wallet-withdrawal-post-type.php:119
+#: includes/class-woo-wallet-withdrawal-post-type.php:139
+msgid "Delete"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-post-type.php:142
+msgid "Download PayPal MassPay CSV"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-admin.php:133
+msgid "Endpoint for the \"My account &rarr; Wallet withdrawal\" page."
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-admin.php:81
+msgid "Enter License Email"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-admin.php:74
+msgid "Enter License Key"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-post-type.php:84
+msgid "Gateway Charge"
+msgstr ""
+
+#. URI of the plugin
+msgid "http://woowallet.in/"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://profiles.wordpress.org/subratamal"
+msgstr ""
+
+#: templates/woo-wallet-withdrawal-settings.php:45
+msgid "IBAN"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-admin.php:54
+msgid ""
+"If checked, you can set payment gateway charge to the user for wallet "
+"withdrawal."
+msgstr ""
+
+#: templates/woo-wallet-withdrawal-details.php:25
+#: includes/class-woo-wallet-withdrawal-post-type.php:86
+msgid "Method"
+msgstr ""
+
+#: templates/woo-wallet-withdrawal-settings.php:36
+msgid "Name of bank"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-admin.php:53
+msgid "Payment Gateway Charge"
+msgstr ""
+
+#: templates/woo-wallet-withdrawal-settings.php:55
+#: includes/gateways/class-woo-wallet-gateway-paypal.php:18
+msgid "PayPal"
+msgstr ""
+
+#: templates/woo-wallet-withdrawal-settings.php:57
+msgid "PayPal Email"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-post-type.php:117
+msgid "Pending"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-post-type.php:54
+#, php-format
+msgid "Pending <span class=\"count\">(%s)</span>"
+msgid_plural "Pending <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-woo-wallet-withdrawal-license.php:197
+msgid "Plugin activated. "
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-license.php:244
+msgid "Plugin license deactivated."
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-post-type.php:119
+#: includes/class-woo-wallet-withdrawal-post-type.php:138
+msgid "Reject"
+msgstr ""
+
+#: templates/woo-wallet-withdrawal-settings.php:42
+msgid "Routing number"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-frontend.php:78
+msgid "Something went wrong please try again later"
+msgstr ""
+
+#: templates/tabs/ww-approved.php:31 templates/tabs/ww-cancelled.php:30
+msgid "Sorry, no transactions were found!"
+msgstr ""
+
+#: templates/woo-wallet-withdrawal-details.php:24
+#: includes/class-woo-wallet-withdrawal-post-type.php:85
+msgid "Status"
+msgstr ""
+
+#: templates/woo-wallet-withdrawal-settings.php:64
+#: includes/gateways/class-woo-wallet-gateway-stripe.php:18
+msgid "Stripe"
+msgstr ""
+
+#. Author of the plugin
+msgid "Subrata Mal"
+msgstr ""
+
+#: templates/woo-wallet-withdrawal-settings.php:48
+msgid "Swift code"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-post-type.php:82
+msgid "User"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-post-type.php:115
+#: includes/class-woo-wallet-withdrawal-post-type.php:117
+#: includes/class-woo-wallet-withdrawal-post-type.php:119
+msgid "View details"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-admin.php:132
+#: includes/class-woo-wallet-withdrawal-frontend.php:46
+msgid "Wallet Withdrawal"
+msgstr ""
+
+#: templates/woo-wallet-withdrawal-settings.php:25
+msgid "Wallet withdrawal"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-frontend.php:121
+msgid "Wallet withdrawal request #"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-admin.php:110
+msgid "Withdraw Methods"
+msgstr ""
+
+#: templates/woo-wallet-withdrawal.php:23
+msgid "Withdraw Request"
+msgstr ""
+
+#. Description of the plugin
+msgid "Withdraw wallet credits as cash."
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-frontend.php:51
+msgid "Withdrawal"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-admin.php:42
+msgid "Withdrawal License"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-admin.php:33
+msgid "Withdrawal Options"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-post-type.php:31
+msgid "Withdrawal Requests"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-post-type.php:57
+msgctxt "Withdrawal status"
+msgid "Approved"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-post-type.php:65
+msgctxt "Withdrawal status"
+msgid "Cancelled"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal-post-type.php:49
+msgctxt "Withdrawal status"
+msgid "Pending"
+msgstr ""
+
+#. Name of the plugin
+msgid "WooCommerce Wallet Withdrawal"
+msgstr ""
+
+#: includes/class-woo-wallet-withdrawal.php:224
+msgid ""
+"WooCommerce Wallet Withdrawal plugin requires <a href=\"http://wordpress."
+"org/extend/plugins/woo-wallet/\">WooCommerce Wallet</a> plugins to be active!"
+msgstr ""
+
+#: templates/tabs/ww-pending.php:29
+msgid "You have pending withdrawal"
+msgstr ""
+
+#: templates/woo-wallet-withdrawal-settings.php:30
+msgid "Your bank account name"
+msgstr ""
+
+#: templates/woo-wallet-withdrawal-settings.php:33
+msgid "Your bank account number"
+msgstr ""
